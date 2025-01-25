@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💰 CoinTracker | Login </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--     This is test
+ -->    <div class="wrapper">
+        <img id="animatedImage" src="your-image-path.png" alt="Animated Image">
+        <h2 class="text-right">Coin</h2>
+        <div class="form-wrapper login">
+            <form action="" onsubmit="return goToNewHome()">
+                <h3>Login</h3>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit">Login</button>
+                <div class="sign-link">
+                    <p>Don't have an account? <a href="#" onclick="registerActive()">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function goToNewHome() {
+            // Perform any login logic here if needed
+
+            // Redirect to newhome.html
+            window.location.href = "newhome/index.html";
+            return false; // prevent form submission
+        }
+    </script>
+</body>
+</html>

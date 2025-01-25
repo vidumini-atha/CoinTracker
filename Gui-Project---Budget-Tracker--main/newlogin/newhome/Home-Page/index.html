@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>C💰inTracker Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    
+      <header></header>
+    <div class="grid-container">
+
+      <!-- Header 
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+       End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+         <!-- <div class="sidebar-title">
+          <div class="sidebar-brand">
+          <span class="coin-tracker"></span>
+            <span class="caption">Your profile</span> 
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+         <ul class="sidebar-list">
+         
+        Sidebar -->
+
+  <div class="profile-box">
+    <div class="profile-info">
+      <img src="profile-photo.jpg" alt="Profile Photo">
+      <div class="user-details">
+        
+        <div class="user-detail-box">
+          <span class="user-label"> 👤 Virat Kohli</span><br>
+          
+        </div>
+        <div class="user-detail-box">
+          <span class="user-value"> 📧 kohli@123.com</span>
+        </div>
+        <div class="user-detail-box">
+          <span class="user-value">📞 123-456-7890</span>
+        </div>
+        <div class="user-detail-box">
+          <span class="user-value">📍 India</span>
+        </div>
+        <br>
+        <div class="user-detail-box">
+          <span class="user-value">➕ Add Details</span>
+        </div>
+
+      
+
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <!--<div class="main-title">
+          <h4>DASHBOARD</h4>
+        </div>-->
+
+        <!--<div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <h4>ADD YOUR INCOME </h4>
+              <span class="material-icons-outlined">attach_money</span>            
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h4>ADD EXPENSES</h4>
+              <span class="material-icons-outlined">credit_card</span>
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h4>VIEW EXPENSES</h4>
+              <span class="material-icons-outlined">preview</span>              
+            </div>
+            
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <h4>YOUR GOALS</h4>
+              <span class="material-icons-outlined">sports_score</span>
+            </div>
+            
+          </div>
+
+        </div>-->
+
+        <div class="charts">
+
+          <div class="charts-card">
+            <h3 class="chart-title">Top 5 Expenses in Last Month</h3>
+            <div id="bar-chart"></div>
+          </div>
+
+          <div class="charts-card">
+            <h3 class="chart-title">7 - Month Summary</h3>
+            <div id="area-chart"></div>
+          </div>
+
+        </div>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+

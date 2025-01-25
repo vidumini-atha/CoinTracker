@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="bag.png" type="image/x-icon" sizes="16x16">
+    <title>CoinTracker </title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       body{
+    overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+#coin-container {
+            position: fixed;
+            top: -43px;
+            left: 62px;
+            width: 70px;
+            height: 50px;
+            opacity: 0.8;
+            z-index: 1001;
+        }
+ #logo {
+            position: fixed;
+            top: -75px;
+            left: 25px;
+            width: 50px;
+            height: 40px;
+            z-index: 1000; /* Adjust z-index as needed */
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+        <h3 class="text-right">Coin</h3></div>
+       <!--  <a href="#" class="logo">ActiveLink.</a> -->
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#Income">Add Your Income</a>
+            <a href="#Expenses">Expenses</a>
+            <a href="#YourGoals">Savings for Goals</a>
+            <a href="#Monthly Report">Monthly Report</a>
+        </nav>
+    </header>
+    <section id="home">
+        <div id="coin-container"><img src="coin.png" alt="Coin" id="rotating-coin"></div>
+<div id="logo"><img src="logo.png" alt="Logo" id="Logoo" width="250px"></div>
+        <object type="text/html" data="Home-Page/index.html" width="1500" height="800"></object>
+
+    </section>
+    <section id="Income"><object type="text/html" data="Income1/index.html" width="1500" height="800"></object></section>
+    
+    <section id="Expenses"><object type="text/html" data="Add_Expenses/index.html" width="1500" height="800"></object>
+    </section>
+
+
+    <section id="YourGoals"><br><h5>Savings for Your Goals- Distributing Equal Amounts from Monthly Savings</h5>
+    </div><object type="text/html" data="goals/index.html" width="1500" height="800"></object>
+        
+
+    </section>
+    
+
+    <section id="Monthly Report"><object type="text/html" data="MonthlyReport2/index.html" width="1500" height="900"></object></section>
+
+    <script src="script.js"></script>
+</body>
+</html>

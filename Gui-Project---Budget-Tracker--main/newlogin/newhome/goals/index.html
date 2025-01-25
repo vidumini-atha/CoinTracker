@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>💰 CoinTracker | Your Goals</title>
+</head>
+
+
+<body>
+   
+    <div class="container">
+        <div class="section">
+        <!--Vaccation fund-->
+            <div class="circle1"></div>
+        <div class="progress-container">
+            <h3>Vacation Fund</h3>
+            <div class="progress-bar">
+                <span data-width="90%"></span>
+            </div>
+        </div>
+        <style>
+            h4 {
+                white-space: pre;
+            }
+        </style>
+        <h4>Total Amount:             Rs. 50 000</h4>
+        <h4>Remaining Amount:   Rs.  5 000</h4>
+    </div>
+
+        <!--iphone 15-->
+    <div class="section">
+        <div class="circle2"></div>
+    <div class="progress-container">
+        <h3>Tech Upgrade IPhone 15</h3>
+        <div class="progress-bar">
+            <span data-width="30%"></span>
+        </div>
+    </div>
+    <style>
+        h4 {
+            white-space: pre;
+        }
+    </style>
+    <h4>Total Amount:             Rs.300 000</h4>
+    <h4>Remaining Amount:  Rs.210 000</h4>
+</div>
+
+        <!--furniture-->
+
+<div class="section">
+    <div class="circle3"></div>
+<div class="progress-container">
+    <h3>Furniture</h3>
+    <div class="progress-bar">
+        <span data-width="70%"></span>
+    </div>
+</div>
+<style>
+    h4 {
+        white-space: pre;
+    }
+</style>
+<h4>Total Amount:             Rs. 40 000</h4>
+<h4>Remaining Amount:  Rs. 12 000</h4>
+</div>
+
+        <!--wedding -->
+
+<div class="section">
+    <div class="circle4"></div>
+<div class="progress-container">
+    <h3>Special Event - Wedding</h3>
+    <div class="progress-bar">
+        <span data-width="15%"></span>
+    </div>
+</div>
+<style>
+    h4 {
+        white-space: pre;
+    }
+</style>
+<h4>Total Amount:             Rs. 500 000</h4>
+<h4>Remaining Amount:  Rs. 425 000</h4>
+</div> 
+        <!--add goal -->
+
+<div class="section">
+    
+<div class="progress-container">
+    <h3>🎯 Add New Goal</h3>
+    
+</div>
+<style>
+    h4 {
+        white-space: pre;
+    }
+</style>
+<div>
+    <input type="text" id="inputNewGoal" placeholder="Enter New Goal Name">
+    <button onclick="addNewGoal()">Add Goal</button>
+</div>
+
+<br>
+            <label for="inputTotalAmount"> </label>
+            <input type="number" id="inputTotalAmount" placeholder="Enter total amount"><br>
+            <button onclick="updateTotalAmount()">Update Total Amount</button>
+
+            <h4><div id="newGoalDisplay"></div></h4>
+            <h4>Total Amount: Rs. <span id="totalAmount">0</span></h4>
+
+            <button onclick="redirectToUpdatedGoal()">Update</button>
+
+</div> 
+
+        
+    </div>
+    <!--<button id="scrollLeft">Scroll Left</button>
+    <button id="scrollRight">Scroll Right</button>-->
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

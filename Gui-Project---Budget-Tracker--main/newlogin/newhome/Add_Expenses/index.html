@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>💰 CoinTracker | Add-Expenses</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .expenses-list {
+        height: 35vh; /* Set a fixed height for the container */
+        overflow-y: auto; /* Enable vertical scrolling for the container */
+    }
+
+  
+</style>
+<body>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+        <center><h2> ADD YOUR EXPENSES</h2></center>
+        
+            <!-- Content of the section with vertical scroll if needed -->
+          
+        <div class="input-section">
+            <label for="category-select">Category :</label>
+            <select id="category-select">
+                <option value="Vegetables & Fruits">Vegetables & Fruits</option>
+                <option value="Dairy Products">Dairy Products</option>
+                <option value="Meat & Proteins">Meat & Proteins</option>
+                <option value="Bread & Bakery Items">Bread & Bakery Items</option>
+                <option value="Snacks & Beverages">Snacks & Beverages</option>
+                <option value="Household Supplies">Household Supplies</option>
+                <option value="Transport">Transport</option>
+                <option value="Shopping">Shopping</option>
+                <option value="House Rent">House Rent</option>
+                <option value="Maintenance & Repair">Vegetables and Fruits</option>
+                <option value="Electricity Bills">Electricity Bills</option>
+                <option value="Water Bills">Water Bills</option>
+                <option value="Mobile Phone Bills">Mobile Phone Bills</option>
+                <option value="Land Phone Bills">Land Phone Bills</option>
+                <option value="Subscriptions">Subscriptions</option>
+                <option value="Doctor Visits">Doctor Visits</option>
+                <option value="Medical Supplies">Medical Supplies</option>
+                <option value="Tution Fees">Tution Fees</option>
+                <option value="Bookss & Stationaries">Bookss & Stationaries</option>
+                <option value="School Related Expenses">School Related Expenses</option>
+                <option value="Pet Care">Pet Care</option>
+                <option value="Birthday/Holiday Gifts">Birthday/Holiday Gifts</option>
+                <option value="Party Expenses">Party Expenses</option>
+                <option value="Travel">Travel</option>
+                <option value="Membership Fees">Membership Fees</option>
+                <option value="Emergency Fund">Emergency Fund</option>
+                <option value="Savings for Your Goals">Savings for Your Goals</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="amount-input">Amount :</label>
+            <input type="number" id="amount-input">
+            <label for="date-input">Date :</label>
+            <input type="date" id="date-input">
+            <button id="add-btn">ADD</button>
+        </div>
+        <h3>Expenses List</h3>
+        <div class="expenses-list">
+            
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody id="expense-table-body">
+                    
+                </tbody>
+
+                <tfoot>
+                <td>Total :</td>
+                <td id="total-amount"></td>
+                <td></td>
+                <td></td>
+                </tfoot>
+            </table>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

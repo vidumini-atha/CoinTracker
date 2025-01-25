@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coin Tracker</title>
+</head>
+<body>
+    <br><br><br>
+    <center><h2>ADD YOUR INCOME</h2></center>
+    <div class="container">
+        <div claas="a">
+            <label for="monthPicker">&nbsp &nbsp &nbsp &nbsp &nbsp Month</label>
+          <input type="month" id="monthPicker">
+        </div>
+        <button1 onclick="switchMonth()" Switch Month</button1>
+            <section>
+        <label for="incomeType">Income Method</label>
+        <select id="incomeType">
+            <option value="Basic Salary">Basic Salary</option>
+            <option value="Bonuses & OT">Bonuses & OT</option>
+            <option value="Own Business">Own Business</option>
+            <option value="Stock Market">Stock Market</option>
+            <option value="Rental Income">Rental Income</option>
+            <option value="Other">Other</option>
+        </select>
+        <label for="incomeInput">Enter Income</label>
+        <input type="number" id="incomeInput" placeholder="Enter amount">
+        <button2 onclick="addIncome()">Add Income</button2>
+    </section>
+    <section>
+        <div id="incomeList"> </div>
+
+        <b><h4>Total Income: Rs. <span id="totalIncome"></h4></span></b>
+   
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coin Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <center><br><br><br><h1>MONTHLY REPORT</h1></center>
+    <div class="column">
+        <div class="section">
+            <div>
+                <p> we analyze your monthly financial transactions to provide a comprehensive overview of your income sources and expenditure patterns.<br>And also provides a detailed comparison of your expenses with the previous month, categorized by different expenditure areas. By visualizing these comparisons, we can pinpoint areas where your spending has increased or decreased, allowing for a deeper understanding of your financial habits over time.<br><br><br>Wishing you financial success and the ability to save more for a brighter future! 💰</p>
+                <div class="values">
+                    <div class="val-box">
+                        <i class="fa fa-money"></i>
+                        <div>
+                            <span>Total Income</span>
+                            <h3>Rs.140000</h3>
+                        </div>
+                    </div>
+                    <div class="val-box">
+                        <i class="fa fa-credit-card"></i>
+                        <div>
+                            <span>Total Expenses</span>
+                            <h3>Rs.80000</h3>
+                        </div>
+                    </div>
+                    <div class="val-box3">
+                        <i class="fa fa-dollar"></i>
+                        <div>
+                            <span>Balance</span>
+                            <h3>Rs.52000</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="list">
+                    <h4>Highest Expenses !</h4>
+                    <table width="100%" height="50%">
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="indicator"></div>
+                                </td>
+                                <td>🏘️ Housing</td>
+                                <td>Rs.35000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="indicator"></div>
+                                </td>
+                                <td>🥗 Foods & Groceries</td>
+                                <td>Rs.20000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="indicator"></div>
+                                </td>
+                                <td>👨🏻‍🎓Education & Stationaries</td>
+                                <td>Rs.6000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="indicator"></div>
+                                </td>
+                                <td>💡 Utilities & Bills</td>
+                                <td>Rs.5000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="indicator"></div>
+                                </td>
+                                <td>🚍Transpotation</td>
+                                <td>Rs.3500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+            
+            
+                <div class="chart">
+                    <h5>Monthly Transaction Summary: Income vs Expenses</h5>
+                    <div>
+                        <canvas id="pie-chart"></canvas>
+                    </div>
+                </div>
+
+            
+        
+                <div class="container2">
+                    <h2>Expense Comparison with Last Month</h2>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <br>
+        <br>
+        <br>
+        </div>
+        
+        
+           
+            
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

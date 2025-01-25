@@ -1,0 +1,239 @@
+﻿body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    background: rgba(30, 86, 24, 0.753) url(bdg.png) no-repeat;
+    /*background-attachment: fixed;*/
+    background-size: cover;
+  /* position: center;*/
+    background-blend-mode: darken;
+    width: 1300px;
+    overflow-x: hidden;
+    align-items: center;
+
+}
+
+h1{
+    text-align: center;
+   /* font-family: 'Poppins', 'sans-serif';*/
+}
+
+
+
+h2 {
+    
+    border: solid rgba(194, 248, 216, 0.877);
+    padding: 10px 15px;
+    background-color: #325c27;
+    margin-left: 5px;
+    border-radius: 8px;
+    color: #9be288;
+    border-radius: 17px;
+    border-width: 0.2px;
+    /*width: 100%;*/
+    align-items: center;
+    text-align: center;
+    will-change: box-shadow,transform;
+    white-space:inherit;
+    transition: box-shadow .15s,transform .15s;
+    display: inline-flex;
+    background-image: radial-gradient(100% 100% at 100% 0, #02990f 0, #0a4602d7 100%);
+    box-shadow: rgb(0, 5, 1) 0 2px 4px,rgba(113, 243, 135, 0.3) 0 7px 13px -3px,rgba(57, 245, 107, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    z-index: 1;
+
+}
+
+h3 {
+    color: #c8f89b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #010300cc,  
+     1px -1px 0 #091d01d5,
+    -1px  1px 0 #75f791,
+     1px  1px 0 #9aebb5e3; /* Shadow to create the border effect */
+-webkit-background-clip: text; /* For Safari */
+background-clip: text; /* Clip the background to the text */
+color: transparent; /* Make the text transparent */
+background-color: #fff; /* Background color */
+font-size: x-large;
+
+
+}
+
+
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 80px;
+}
+
+    .input-section label {
+       /* font-weight: bold;
+        margin-right: 2px;
+        margin-left: 2px;
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        border: 1px solid black;
+        padding: 5px 5px;
+        background-color: #B7FFDB;
+        border-radius: 20px;*/
+        text-align: center;
+        width: auto;
+        padding: 10px;
+        font-size: large;
+        margin-left: 0;
+        color: #a1f091;
+        border: none;
+        border-radius: 17px;
+        cursor: pointer;
+        will-change: box-shadow,transform;
+        white-space: nowrap;
+        transition: box-shadow .15s,transform .15s;
+        display: inline-flex;
+        background-image: radial-gradient(100% 100% at 100% 0, #013606 0, #081401 100%);
+        box-shadow: rgb(0, 5, 1) 0 2px 4px,rgba(108, 247, 189, 0.3) 0 7px 13px -3px,rgba(89, 238, 129, 0.5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        border-color: #eef7efe3;
+        border-style: none;
+        border-width: 0.2px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        z-index: 1;
+
+
+    }
+
+    .input-section select{
+        padding-left: 5px;
+        padding: 6px;
+        margin: 2px auto;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 15px;
+        background-image: radial-gradient(100% 100% at 100% 0, #ecf7c4 0, #a0e777 100%);
+        box-shadow: rgb(0, 5, 1) 0 2px 4px,rgba(51, 221, 150, 0.3) 0 7px 13px -3px,rgba(1, 90, 24, 0.5) 0 -3px 0 inset;
+        box-sizing: border-box;
+        border-color: #cff7d5;
+        border-style: solid;
+        border-width: 0.2px;
+        font-weight: 500;
+        z-index: 1;
+
+    }
+
+    .input-section input[type="number"], .input-section input[type="date"] {
+        padding: 5px;
+        margin: 2px auto;
+
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 10px;
+
+    }
+
+    .input-section button {
+        padding: 5px 10px;
+        margin-left: 0px;
+        background-image: radial-gradient(100% 100% at 100% 0, #cef14d 0, #4fb812 100%);
+        color: rgb(1, 32, 9);
+        font-weight: bold;
+        border: 2px none rgb(154, 241, 137);
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: rgb(0, 5, 1) 0 2px 4px,rgba(51, 221, 150, 0.3) 0 7px 13px -3px,rgba(1, 90, 24, 0.5) 0 -3px 0 inset;
+
+    }
+
+.expenses-list {
+    margin: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+table {
+    width: 95%;
+    border-collapse: none;
+margin: 5px auto;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+}
+
+th {
+    border: 2px solid #040405;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    background-color: rgb(171, 245, 202);
+    color: rgb(1, 31, 8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px;
+    background-image: radial-gradient(100% 100% at 100% 0, #c4f7ea 0, #a0e777 100%);
+    box-shadow: rgb(0, 5, 1) 0 2px 4px,rgba(51, 221, 150, 0.3) 0 7px 13px -3px,rgba(1, 90, 24, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    border-color: #83fa93;
+    border-style: solid;
+    border-width: 1px;
+    font-weight: bold;
+    z-index: 1;
+
+
+
+}
+
+td {
+    border: 2px solid #040405;
+    padding: 8px;
+    margin: 5px;
+    margin-right: 40px;
+    margin-left: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    background-color: rgb(157,209,130);
+   color: rgb(12, 1, 1);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   border-radius: 15px;
+   background-image: radial-gradient(100% 100% at 100% 0, #06a511 0, #6ece36 100%);
+   box-shadow: rgb(0, 5, 1) 0 2px 4px,rgba(51, 221, 150, 0.3) 0 7px 13px -3px,rgba(1, 90, 24, 0.5) 0 -3px 0 inset;
+   box-sizing: border-box;
+   border-color:#83fa93;
+   border-style: solid;
+   border-width: 1px;
+   font-weight: 500;
+   align-items: center;
+   z-index: 1;
+
+
+
+}
+
+
+
+
+tfoot td {
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 200px;
+}
+
+.delete-btn {
+    padding: 5px 5px;
+    margin: 5px;
+    background-color: #B22222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
